@@ -1,3 +1,11 @@
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+alias gitfab='git branch -r | grep -v "\->" | while read remote; do git branch --track "${remote#origin/}" "$remote"; done'
+alias lstree="tree -C -I 'node_modules|lib|source_files|[Ee]xercise' "
+alias lsa='ls -la'
+
+
 #!/usr/bin/env bash
 
 __powerline() {
@@ -79,8 +87,9 @@ __powerline() {
   ps1() {
     # Change \W to \w to show the current working directory instead of the base name
     PS1="$BG_BASE3$FG_BASE02 \W $RESET"
-    PS1+="$BG_ORANGE$FG_BASE02$(__git_info)$RESET\n└─▪"
+    PS1+="$BG_GREEN$FG_BASE02$(__git_info)$RESET\n¯\_(ツ)_/¯  >>> "
   }
+  # ►  └─  ¯\_(ツ)_/¯    (ಠ.ಠ)
 
   # Enable the ability to open new tabs in the current working directory
   PROMPT_COMMAND="ps1 ; $PROMPT_COMMAND"
