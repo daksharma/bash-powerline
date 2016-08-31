@@ -1,5 +1,11 @@
+
+# show colors when using ls to list what is in the current folder
+# this usage is for dark background.
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+# for white background use this instead of the one above
+# export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # fetches all branches from remote if they are not synced with local
 alias gitfab='git branch -r | grep -v "\->" | while read remote; do git branch --track "${remote#origin/}" "$remote"; done'
