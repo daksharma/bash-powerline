@@ -2,7 +2,7 @@
 
 Powerline for Bash in pure Bash script.
 
-![bash-powerline](https://raw.github.com/bcmarinacci/bash-powerline/master/tomorrow-night-eighties.png)
+![bash-powerline](https://github.com/daksharma/bash-powerline/blob/master/Bash%20Style%20Pref.png)
 
 ## Features
 
