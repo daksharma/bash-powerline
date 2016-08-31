@@ -1,7 +1,9 @@
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
+# fetches all branches from remote if they are not synced with local
 alias gitfab='git branch -r | grep -v "\->" | while read remote; do git branch --track "${remote#origin/}" "$remote"; done'
+# install tree from homebrew to use this command
 alias lstree="tree -C -I 'node_modules|lib|source_files|[Ee]xercise' "
 alias lsa='ls -la'
 
