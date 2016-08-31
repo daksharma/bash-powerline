@@ -4,6 +4,9 @@ Powerline for Bash in pure Bash script.
 
 ![bash-powerline](https://github.com/daksharma/bash-powerline/blob/master/Bash%20Style%20Pref.png)
 
+lstree command
+![lstree](https://github.com/daksharma/bash-powerline/blob/master/lstree-screen-shot.png)
+
 ## Features
 
 * Git branch: display current git branch name, or short SHA1 hash when the head is detached
